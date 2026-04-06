@@ -27,7 +27,8 @@
   <!-- Android / Chrome -->
   <link rel="manifest" href="src/img/favicon/site.webmanifest">
   <!-- Theme Color -->
-  <!-- <meta name="theme-color" content="#2563eb"> -->
+  <meta name="theme-color" content="#f0f4ff" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#060f2c" media="(prefers-color-scheme: dark)">
 
   <!-- OPEN GRAPH -->
   <meta property="og:type" content="website" />
@@ -48,31 +49,92 @@
   <meta name="twitter:image" content="https://fix-my-speaker.org/src/img/og-image.jpg" />
 
   <!-- JSON-LD: Organization -->
-  <!-- JSON-LD: Website -->
-  <!-- JSON-LD: Webpage -->
-  <!-- JSON-LD: SoftwareApplication -->
-
-
-  <!-- JSON-LD: WebApplication -->
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebApplication",
-        "name": "Fix My Speaker",
-        "url": "https://fix-my-speaker.org/",
-        "description": "A free online tool that uses sound wave technology to eject water and dust from phone speakers. No download required.",
-        "applicationCategory": "UtilitiesApplication",
-        "operatingSystem": "Any",
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.4",
-          "bestRating": "5",
-          "worstRating": "1",
-          "ratingCount": "12500"
-        }
-      }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fix My Speaker",
+  "url": "https://fix-my-speaker.org/",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://fix-my-speaker.org/src/img/og-image.jpg",
+    "width": 1200,
+    "height": 630
+  },
+  "sameAs": [
+    "https://twitter.com/fixmyspeaker",
+    "https://www.facebook.com/fixmyspeaker"
+  ]
+}
+</script>
+
+  <!-- JSON-LD: WebSite -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Fix My Speaker",
+  "url": "https://fix-my-speaker.org/",
+  "description": "Free online tool to eject water and dust from phone speakers using sound wave technology.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://fix-my-speaker.org/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+  <!-- JSON-LD: WebPage -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Fix My Speaker - Remove Water & Dust from Phone Speakers",
+  "url": "https://fix-my-speaker.org/",
+  "description": "Fix My Speaker is a free online tool that uses sound waves to eject water and dust from your phone speaker instantly. No apps needed. Works on iPhone & Android.",
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://fix-my-speaker.org/"
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Speaker Cleaning Tool"
+  },
+  "datePublished": "2024-01-01",
+  "dateModified": "2025-04-06"
+}
+</script>
+
+  <!-- JSON-LD: SoftwareApplication + WebApplication -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["SoftwareApplication", "WebApplication"],
+  "name": "Fix My Speaker",
+  "url": "https://fix-my-speaker.org/",
+  "description": "A free browser-based tool that uses sound wave frequencies to eject water and dust from phone speakers. No download or installation required.",
+  "applicationCategory": "UtilitiesApplication",
+  "applicationSubCategory": "Speaker Cleaner",
+  "operatingSystem": "Any",
+  "browserRequirements": "Requires a modern browser with Web Audio API support",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "featureList": [
+    "Sound Wave Mode",
+    "Vibration Mode",
+    "Live Progress Tracking",
+    "No Download Required",
+    "Works on iPhone and Android"
+  ]
+}
+</script>
 
   <!-- JSON-LD: HowTo -->
   <script type="application/ld+json">
@@ -224,7 +286,7 @@
     <!-- HERO -->
     <section class="hero" id="hero" aria-labelledby="hero-h1">
       <div class="hero-badge" role="note">🌊 Sound Wave Technology</div>
-      <h1 id="hero-h1">Fix My Speaker - Eject <em>Water & Dust</em><br />From Your Speaker</h1>
+      <h1 id="hero-h1">Fix My Speaker - Eject <em>Water & Dust</em> From Your Phone</h1>
       <p>
         Free online speaker cleaner - no app download needed. Targeted sound
         frequencies push water and dust out of your phone's speaker grills
@@ -235,35 +297,35 @@
       <div class="cleaner-card" role="region" aria-label="Speaker Cleaning Tool">
         <div class="ripple-overlay" id="rippleOverlay" aria-hidden="true"></div>
 
-        <!-- Progress Ring -->
-        <div class="ring-wrap" aria-label="Cleaning progress indicator">
-          <svg class="ring-svg" viewBox="0 0 172 172" aria-hidden="true">
-            <circle class="ring-bg" cx="86" cy="86" r="77" />
-            <circle class="ring-fg" id="ringFg" cx="86" cy="86" r="77" />
+        <!-- Semicircle Arc + Percentage -->
+        <div class="arc-wrap" aria-label="Cleaning progress indicator">
+          <svg class="arc-svg" viewBox="0 0 260 145" aria-hidden="true">
+            <!-- background arc: top semicircle, starts left ends right -->
+            <path class="arc-bg" d="M 20 140 A 110 110 0 0 1 240 140" />
+            <path class="arc-fg" id="arcFg" d="M 20 140 A 110 110 0 0 1 240 140" />
           </svg>
-          <div class="ring-inner">
-            <div class="ring-pct" id="pctLabel" aria-live="polite" aria-atomic="true">
-              0%
-            </div>
-            <div class="ring-sub">CLEANING</div>
+          <div class="arc-pct" id="pctLabel" aria-live="polite" aria-atomic="true">
+            0%
           </div>
         </div>
 
-        <!-- Mode Tabs -->
+        <!-- MODE label + tabs -->
+        <div class="mode-label">MODE</div>
         <div class="mode-tabs" role="tablist" aria-label="Select cleaning mode">
           <button class="mode-tab active" id="tabSound" role="tab" aria-selected="true" onclick="setMode('sound')">
-            💨 Sound Wave
+            SOUND
           </button>
           <button class="mode-tab" id="tabVibrate" role="tab" aria-selected="false" onclick="setMode('vibrate')">
-            💦 Vibration
+            VIBRATE
           </button>
         </div>
 
-        <!-- Eject Button -->
+        <!-- Circular eject button -->
         <button class="eject-btn" id="ejectBtn" onclick="toggleCleaner()"
           aria-label="Press to start ejecting water from speaker">
-          🔊 PRESS TO EJECT WATER
+          <span class="eject-icon" id="ejectIcon">▶</span>
         </button>
+        <div class="eject-label" id="ejectLabel">PRESS TO EJECT WATER</div>
 
         <!-- Stars -->
         <div class="stars-row">

@@ -26,7 +26,7 @@ document
 document.getElementById("yr").textContent = new Date().getFullYear();
 
 /* ── CLEANER ENGINE ── */
-const CIRC = 2 * Math.PI * 77; // r=77
+const ARC_LEN = Math.PI * 110; // semicircle r=110 ≈ 345.6
 
 let mode = "sound",
     running = false,
@@ -87,8 +87,8 @@ function playVibration() {
 }
 
 function updateRing(pct) {
-    const off = CIRC * (1 - pct / 100);
-    document.getElementById("ringFg").style.strokeDashoffset = off;
+    const off = ARC_LEN * (1 - pct / 100);
+    document.getElementById("arcFg").style.strokeDashoffset = off;
     document.getElementById("pctLabel").textContent = Math.round(pct) + "%";
 }
 
@@ -154,7 +154,8 @@ function toggleCleaner() {
 function startCleaner() {
     running = true;
     const btn = document.getElementById("ejectBtn");
-    btn.textContent = "⏹ STOP CLEANING";
+    document.getElementById("ejectIcon").textContent = "⏹";
+    document.getElementById("ejectLabel").textContent = "TAP TO STOP";
     btn.classList.add("running");
     btn.setAttribute("aria-label", "Press to stop cleaning");
     startProgress();
@@ -182,14 +183,25 @@ function stopCleaner(done) {
     clearInterval(partTimer);
     stopAudio();
     const btn = document.getElementById("ejectBtn");
+    btn.classList.remove("running");
     if (done) {
-        btn.textContent = "✅ Done! Run Again?";
+        document.getElementById("ejectIcon").textContent = "✔";
+        document.getElementById("ejectLabel").textContent = "CLEANING DONE!";
         btn.setAttribute(
             "aria-label",
             "Cleaning complete. Press to run again.",
         );
+        setTimeout(() => {
+            document.getElementById("ejectIcon").textContent = "▶";
+            document.getElementById("ejectLabel").textContent =
+                "PRESS TO EJECT WATER";
+            updateRing(0);
+            progress = 0;
+        }, 2500);
     } else {
-        btn.textContent = "🔊 PRESS TO EJECT WATER";
+        document.getElementById("ejectIcon").textContent = "▶";
+        document.getElementById("ejectLabel").textContent =
+            "PRESS TO EJECT WATER";
         btn.setAttribute(
             "aria-label",
             "Press to start ejecting water from speaker",
@@ -197,7 +209,6 @@ function stopCleaner(done) {
         updateRing(0);
         progress = 0;
     }
-    btn.classList.remove("running");
 }
 
 /* ── FAQ ── */
@@ -243,8 +254,8 @@ faqs.forEach((f, i) => {
     item.setAttribute("role", "listitem");
     item.innerHTML = `
 <button class="faq-q" onclick="toggleFaq(${i})" aria-expanded="false" aria-controls="fa${i}">
-    ${f.q}
-    <span class="faq-arrow" aria-hidden="true">▾</span>
+${f.q}
+<span class="faq-arrow" aria-hidden="true">▾</span>
 </button>
 <div class="faq-a" id="fa${i}"><p>${f.a}</p></div>
 `;
