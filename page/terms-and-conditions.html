@@ -7,7 +7,8 @@
 
   <!-- PRIMARY SEO -->
   <title>Terms and Conditions - Fix My Speaker | Terms of Use</title>
-  <meta name="description" content="Read the Fix My Speaker terms and conditions. By using our free browser-based speaker cleaning tool, you agree to these terms of use." />
+  <meta name="description"
+    content="Read the Fix My Speaker terms and conditions. By using our free browser-based speaker cleaning tool, you agree to these terms of use." />
   <meta name="keywords" content="fix my speaker terms and conditions, terms of use, speaker cleaner terms" />
   <link rel="canonical" href="https://fix-my-speaker.org/terms-and-conditions" />
   <meta name="robots" content="index, follow" />
@@ -26,7 +27,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://fix-my-speaker.org/terms-and-conditions" />
   <meta property="og:title" content="Terms and Conditions - Fix My Speaker" />
-  <meta property="og:description" content="Read the Fix My Speaker terms and conditions. By using our free browser-based speaker cleaning tool, you agree to these terms of use." />
+  <meta property="og:description"
+    content="Read the Fix My Speaker terms and conditions. By using our free browser-based speaker cleaning tool, you agree to these terms of use." />
   <meta property="og:image" content="https://fix-my-speaker.org/src/img/og-image.jpg" />
   <meta property="og:site_name" content="Fix My Speaker" />
   <meta property="og:locale" content="en_US" />
@@ -79,7 +81,9 @@
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="../src/css/index.css">
 
@@ -88,588 +92,833 @@
     .page-hero {
       padding: 80px 24px 50px;
       text-align: center;
-      position: relative; overflow: hidden;
+      position: relative;
+      overflow: hidden;
     }
+
     .page-hero::before {
-      content: ''; position: absolute; inset: 0; pointer-events: none;
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
       background: radial-gradient(ellipse 80% 60% at 50% 0%, var(--accent-glow) 0%, transparent 70%);
     }
+
     .breadcrumb {
-      display: flex; align-items: center; justify-content: center;
-      gap: 8px; margin-bottom: 22px;
-      font-size: .8rem; color: var(--text-muted); list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 22px;
+      font-size: .8rem;
+      color: var(--text-muted);
+      list-style: none;
     }
-    .breadcrumb a { color: var(--accent); text-decoration: none; transition: opacity .2s; }
-    .breadcrumb a:hover { opacity: .75; }
+
+    .breadcrumb a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+
+    .breadcrumb a:hover {
+      opacity: .75;
+    }
+
     .page-hero h1 {
       font-family: 'Sora', sans-serif;
       font-size: clamp(2rem, 5vw, 3rem);
-      font-weight: 800; line-height: 1.15;
-      max-width: 580px; margin: 0 auto 16px;
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 580px;
+      margin: 0 auto 16px;
       position: relative;
     }
-    .page-hero h1 em { font-style: normal; color: var(--accent); }
-    .page-hero > p {
-      color: var(--text-muted); font-size: 1rem; line-height: 1.75;
-      max-width: 500px; margin: 0 auto 16px; position: relative;
+
+    .page-hero h1 em {
+      font-style: normal;
+      color: var(--accent);
     }
+
+    .page-hero>p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      max-width: 500px;
+      margin: 0 auto 16px;
+      position: relative;
+    }
+
     .updated-badge {
-      display: inline-flex; align-items: center; gap: 7px;
-      background: var(--badge-bg); border: 1px solid var(--badge-border);
-      color: var(--badge-text); border-radius: 50px;
-      padding: 5px 14px; font-size: .76rem; font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      background: var(--badge-bg);
+      border: 1px solid var(--badge-border);
+      color: var(--badge-text);
+      border-radius: 50px;
+      padding: 5px 14px;
+      font-size: .76rem;
+      font-weight: 700;
       position: relative;
     }
 
     /* LAYOUT */
     .terms-layout {
-      max-width: 980px; margin: 0 auto;
+      max-width: 980px;
+      margin: 0 auto;
       padding: 48px 24px 80px;
-      display: grid; grid-template-columns: 240px 1fr;
-      gap: 48px; align-items: start;
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 48px;
+      align-items: start;
     }
 
     /* STICKY SIDEBAR TOC */
     .toc {
-      position: sticky; top: 84px;
+      position: sticky;
+      top: 84px;
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 18px; padding: 22px 20px;
+      border-radius: 18px;
+      padding: 22px 20px;
       transition: background .3s, border-color .3s;
     }
+
     .toc-title {
       font-family: 'Sora', sans-serif;
-      font-size: .78rem; font-weight: 800;
-      color: var(--text-muted); letter-spacing: .1em;
-      text-transform: uppercase; margin-bottom: 14px;
+      font-size: .78rem;
+      font-weight: 800;
+      color: var(--text-muted);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: 14px;
     }
-    .toc-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+
+    .toc-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
     .toc-list a {
-      display: block; padding: 7px 10px;
-      border-radius: 8px; font-size: .82rem; font-weight: 500;
-      color: var(--text-muted); text-decoration: none;
-      transition: background .2s, color .2s; line-height: 1.4;
+      display: block;
+      padding: 7px 10px;
+      border-radius: 8px;
+      font-size: .82rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: background .2s, color .2s;
+      line-height: 1.4;
     }
-    .toc-list a:hover { background: var(--surface2); color: var(--accent); }
-    .toc-list a.active { background: var(--step-num-bg); color: var(--accent); font-weight: 700; }
+
+    .toc-list a:hover {
+      background: var(--surface2);
+      color: var(--accent);
+    }
+
+    .toc-list a.active {
+      background: var(--step-num-bg);
+      color: var(--accent);
+      font-weight: 700;
+    }
 
     /* SUMMARY PILLS */
     .terms-summary {
-      display: grid; grid-template-columns: repeat(3, 1fr);
-      gap: 12px; margin-bottom: 48px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 48px;
     }
+
     .summary-pill {
       background: var(--surface);
       border: 1px solid var(--border);
-      border-radius: 14px; padding: 18px 16px;
+      border-radius: 14px;
+      padding: 18px 16px;
       text-align: center;
       transition: background .3s, border-color .3s;
     }
-    .summary-pill .sp-icon { font-size: 1.6rem; margin-bottom: 7px; }
+
+    .summary-pill .sp-icon {
+      font-size: 1.6rem;
+      margin-bottom: 7px;
+    }
+
     .summary-pill .sp-label {
       font-family: 'Sora', sans-serif;
-      font-size: .8rem; font-weight: 700; color: var(--text); line-height: 1.3;
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.3;
     }
-    .summary-pill .sp-val { font-size: .75rem; color: var(--text-muted); margin-top: 3px; }
+
+    .summary-pill .sp-val {
+      font-size: .75rem;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
 
     /* TERMS SECTIONS */
     .terms-section {
       margin-bottom: 48px;
       scroll-margin-top: 90px;
     }
+
     .terms-section h2 {
       font-family: 'Sora', sans-serif;
-      font-size: 1.15rem; font-weight: 800;
-      color: var(--text); margin-bottom: 14px;
-      display: flex; align-items: center; gap: 10px;
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--text);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
     }
+
     .terms-section h2 .sec-icon {
-      width: 34px; height: 34px; border-radius: 9px; flex-shrink: 0;
-      background: var(--step-num-bg); border: 1px solid var(--step-num-b);
-      display: flex; align-items: center; justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      flex-shrink: 0;
+      background: var(--step-num-bg);
+      border: 1px solid var(--step-num-b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 1rem;
     }
+
     .terms-section p {
-      color: var(--text-muted); font-size: .92rem;
-      line-height: 1.8; margin-bottom: 12px;
+      color: var(--text-muted);
+      font-size: .92rem;
+      line-height: 1.8;
+      margin-bottom: 12px;
     }
-    .terms-section p:last-child { margin-bottom: 0; }
+
+    .terms-section p:last-child {
+      margin-bottom: 0;
+    }
+
     .terms-section ul {
-      list-style: none; display: flex; flex-direction: column;
-      gap: 8px; margin: 12px 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin: 12px 0;
     }
+
     .terms-section ul li {
-      display: flex; align-items: flex-start; gap: 10px;
-      color: var(--text-muted); font-size: .92rem; line-height: 1.7;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text-muted);
+      font-size: .92rem;
+      line-height: 1.7;
     }
+
     .terms-section ul li::before {
-      content: '→'; color: var(--accent);
-      font-weight: 700; flex-shrink: 0; margin-top: 1px;
+      content: '→';
+      color: var(--accent);
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 1px;
     }
-    .terms-section a { color: var(--accent); text-decoration: none; }
-    .terms-section a:hover { text-decoration: underline; }
-    .terms-section strong { color: var(--text); }
+
+    .terms-section a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .terms-section a:hover {
+      text-decoration: underline;
+    }
+
+    .terms-section strong {
+      color: var(--text);
+    }
 
     /* HIGHLIGHT BOX */
     .highlight-box {
       background: var(--step-num-bg);
       border: 1px solid var(--step-num-b);
-      border-radius: 14px; padding: 18px 20px;
+      border-radius: 14px;
+      padding: 18px 20px;
       margin: 16px 0;
-      display: flex; gap: 12px; align-items: flex-start;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
     }
-    .highlight-box .hb-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+
+    .highlight-box .hb-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
     .highlight-box p {
-      color: var(--text); font-size: .9rem;
-      line-height: 1.7; margin: 0 !important;
+      color: var(--text);
+      font-size: .9rem;
+      line-height: 1.7;
+      margin: 0 !important;
     }
-    .highlight-box strong { color: var(--accent); }
+
+    .highlight-box strong {
+      color: var(--accent);
+    }
 
     /* WARNING BOX */
     .warning-box {
-      background: rgba(234,179,8,.08);
-      border: 1px solid rgba(234,179,8,.3);
-      border-radius: 14px; padding: 18px 20px;
+      background: rgba(234, 179, 8, .08);
+      border: 1px solid rgba(234, 179, 8, .3);
+      border-radius: 14px;
+      padding: 18px 20px;
       margin: 16px 0;
-      display: flex; gap: 12px; align-items: flex-start;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
     }
-    .warning-box .hb-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+
+    .warning-box .hb-icon {
+      font-size: 1.3rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
     .warning-box p {
-      color: var(--text); font-size: .9rem;
-      line-height: 1.7; margin: 0 !important;
+      color: var(--text);
+      font-size: .9rem;
+      line-height: 1.7;
+      margin: 0 !important;
     }
 
     /* DIVIDER */
-    .terms-divider { height: 1px; background: var(--border); margin: 40px 0; border: none; }
+    .terms-divider {
+      height: 1px;
+      background: var(--border);
+      margin: 40px 0;
+      border: none;
+    }
 
     /* CONTACT BLOCK */
     .contact-block {
-      background: var(--surface); border: 1px solid var(--border);
-      border-radius: 18px; padding: 28px 24px; margin-top: 12px;
-      display: flex; align-items: center; gap: 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px 24px;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
       transition: background .3s, border-color .3s;
     }
+
     .contact-block .cb-icon {
-      width: 52px; height: 52px; border-radius: 14px; flex-shrink: 0;
-      background: var(--step-num-bg); border: 1px solid var(--step-num-b);
-      display: flex; align-items: center; justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      flex-shrink: 0;
+      background: var(--step-num-bg);
+      border: 1px solid var(--step-num-b);
+      display: flex;
+      align-items: center;
+      justify-content: center;
       font-size: 1.5rem;
     }
+
     .contact-block h4 {
-      font-family: 'Sora', sans-serif; font-size: .97rem; font-weight: 700;
-      color: var(--text); margin-bottom: 4px;
+      font-family: 'Sora', sans-serif;
+      font-size: .97rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
     }
-    .contact-block p { color: var(--text-muted); font-size: .86rem; margin: 0; }
-    .contact-block a { color: var(--accent); font-weight: 600; text-decoration: none; }
-    .contact-block a:hover { text-decoration: underline; }
+
+    .contact-block p {
+      color: var(--text-muted);
+      font-size: .86rem;
+      margin: 0;
+    }
+
+    .contact-block a {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .contact-block a:hover {
+      text-decoration: underline;
+    }
 
     @media (max-width: 740px) {
-      .terms-layout { grid-template-columns: 1fr; }
-      .toc { position: static; }
-      .terms-summary { grid-template-columns: 1fr 1fr; }
-      .contact-block { flex-direction: column; }
+      .terms-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .toc {
+        position: static;
+      }
+
+      .terms-summary {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .contact-block {
+        flex-direction: column;
+      }
     }
+
     @media (max-width: 420px) {
-      .terms-summary { grid-template-columns: 1fr; }
+      .terms-summary {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav role="navigation" aria-label="Main Navigation">
-  <a class="nav-logo" href="/" aria-label="Fix My Speaker Home">🔊 Fix My<em>Speaker</em></a>
-  <div class="nav-right">
-    <ul class="nav-links" id="navLinks">
+  <!-- NAV -->
+  <nav role="navigation" aria-label="Main Navigation">
+    <a class="nav-logo" href="/" aria-label="Fix My Speaker Home">🔊 Fix My<em>Speaker</em></a>
+    <div class="nav-right">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/#how-to">How It Works</a></li>
+        <li><a href="/#features">Features</a></li>
+        <li><a href="/#devices">Devices</a></li>
+        <li><a href="/#faq">FAQ</a></li>
+        <li><a href="/" class="nav-cta">Clean Now →</a></li>
+      </ul>
+      <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
+        <span class="t-icon t-sun" aria-hidden="true">☀️</span>
+        <span class="t-icon t-moon" aria-hidden="true">🌙</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero" aria-labelledby="tc-h1">
+      <ol class="breadcrumb" aria-label="Breadcrumb">
+        <li><a href="/">Home</a></li>
+        <li aria-hidden="true">›</li>
+        <li aria-current="page">Terms and Conditions</li>
+      </ol>
+      <h1 id="tc-h1">Terms &amp; <em>Conditions</em></h1>
+      <p>Please read these terms carefully before using Fix My Speaker. By accessing our website and tool, you agree to
+        be bound by these terms.</p>
+      <div class="updated-badge">📅 Last updated: April 7, 2025</div>
+    </section>
+
+    <!-- MAIN LAYOUT -->
+    <div class="terms-layout">
+
+      <!-- SIDEBAR TOC -->
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title">On This Page</div>
+        <ul class="toc-list" id="tocList">
+          <li><a href="#acceptance">Acceptance of Terms</a></li>
+          <li><a href="#description">Service Description</a></li>
+          <li><a href="#use">Acceptable Use</a></li>
+          <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
+          <li><a href="#liability">Limitation of Liability</a></li>
+          <li><a href="#ip">Intellectual Property</a></li>
+          <li><a href="#third-party">Third-Party Links</a></li>
+          <li><a href="#privacy">Privacy</a></li>
+          <li><a href="#availability">Service Availability</a></li>
+          <li><a href="#governing">Governing Law</a></li>
+          <li><a href="#changes">Changes to Terms</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- TERMS CONTENT -->
+      <article class="terms-content" aria-label="Terms and conditions content">
+
+        <!-- SUMMARY PILLS -->
+        <div class="terms-summary" aria-label="Key terms summary">
+          <div class="summary-pill">
+            <div class="sp-icon">✅</div>
+            <div class="sp-label">Free to Use</div>
+            <div class="sp-val">No fees or charges</div>
+          </div>
+          <div class="summary-pill">
+            <div class="sp-icon">⚠️</div>
+            <div class="sp-label">No Guarantees</div>
+            <div class="sp-val">Results may vary</div>
+          </div>
+          <div class="summary-pill">
+            <div class="sp-icon">🔒</div>
+            <div class="sp-label">Privacy Protected</div>
+            <div class="sp-val">No data collection</div>
+          </div>
+          <div class="summary-pill">
+            <div class="sp-icon">🚫</div>
+            <div class="sp-label">No Misuse</div>
+            <div class="sp-val">Fair use only</div>
+          </div>
+          <div class="summary-pill">
+            <div class="sp-icon">©️</div>
+            <div class="sp-label">Our IP</div>
+            <div class="sp-val">Content is protected</div>
+          </div>
+          <div class="summary-pill">
+            <div class="sp-icon">⚖️</div>
+            <div class="sp-label">Governed by Law</div>
+            <div class="sp-val">Fair legal terms</div>
+          </div>
+        </div>
+
+        <!-- 1. ACCEPTANCE -->
+        <section class="terms-section" id="acceptance" aria-labelledby="sec-acceptance">
+          <h2 id="sec-acceptance">
+            <span class="sec-icon" aria-hidden="true">📋</span>
+            Acceptance of Terms
+          </h2>
+          <p>By accessing or using the Fix My Speaker website at <a
+              href="https://fix-my-speaker.org/">https://fix-my-speaker.org/</a> ("the Service"), you confirm that you
+            have read, understood, and agree to be bound by these Terms and Conditions ("Terms").</p>
+          <p>If you do not agree to these Terms, please do not use the Service. Your continued use of the website
+            following any updates to these Terms constitutes your acceptance of those changes.</p>
+          <p>These Terms apply to all visitors, users, and anyone who accesses or uses the Service.</p>
+          <div class="highlight-box">
+            <span class="hb-icon">💡</span>
+            <p><strong>Plain English:</strong> By pressing the clean button and using this site, you're agreeing to
+              these terms. They're straightforward and fair.</p>
+          </div>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 2. SERVICE DESCRIPTION -->
+        <section class="terms-section" id="description" aria-labelledby="sec-description">
+          <h2 id="sec-description">
+            <span class="sec-icon" aria-hidden="true">🔊</span>
+            Service Description
+          </h2>
+          <p>Fix My Speaker is a free, browser-based tool that uses the Web Audio API to generate sound frequencies
+            intended to help eject water and dislodge dust from phone and device speakers. The Service operates entirely
+            within your web browser and requires no download, installation, or account registration.</p>
+          <p>The Service provides:</p>
+          <ul>
+            <li>Sound Wave Mode — cycles through multiple audio frequencies to vibrate speaker components</li>
+            <li>Vibration Mode — generates broadband noise to dislodge debris from speaker mesh</li>
+            <li>A progress indicator showing the duration of each cleaning cycle</li>
+          </ul>
+          <div class="warning-box">
+            <span class="hb-icon">⚠️</span>
+            <p>Fix My Speaker is a <strong>first-response tool</strong>, not a professional repair service. It is
+              designed to help with minor water and dust exposure. It cannot repair physical speaker damage, corrosion,
+              or hardware failure. For severe damage, always consult a professional repair service.</p>
+          </div>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 3. ACCEPTABLE USE -->
+        <section class="terms-section" id="use" aria-labelledby="sec-use">
+          <h2 id="sec-use">
+            <span class="sec-icon" aria-hidden="true">✅</span>
+            Acceptable Use
+          </h2>
+          <p>You may use Fix My Speaker for personal, non-commercial purposes in accordance with these Terms. When using
+            the Service, you agree that you will not:</p>
+          <ul>
+            <li>Attempt to reverse engineer, decompile, or extract the source code of the Service for commercial
+              purposes</li>
+            <li>Use automated scripts, bots, or scrapers to excessively request or scrape the Service</li>
+            <li>Attempt to gain unauthorised access to any part of our infrastructure</li>
+            <li>Use the Service in any way that could damage, disable, overburden, or impair its functionality</li>
+            <li>Reproduce, duplicate, copy, or sell any portion of the Service without express written permission</li>
+            <li>Use the Service to transmit spam, malware, or any harmful content</li>
+            <li>Misrepresent the Service or your affiliation with Fix My Speaker</li>
+          </ul>
+          <p>We reserve the right to restrict access to the Service for any user who violates these Terms or who we
+            reasonably believe is misusing the Service.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 4. DISCLAIMER OF WARRANTIES -->
+        <section class="terms-section" id="disclaimer" aria-labelledby="sec-disclaimer">
+          <h2 id="sec-disclaimer">
+            <span class="sec-icon" aria-hidden="true">⚠️</span>
+            Disclaimer of Warranties
+          </h2>
+          <p>Fix My Speaker is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis without
+            warranties of any kind, either express or implied.</p>
+          <p>We make no warranties or representations that:</p>
+          <ul>
+            <li>The Service will meet your specific requirements or expectations</li>
+            <li>The Service will be uninterrupted, timely, secure, or error-free</li>
+            <li>The results obtained from the Service will be accurate, reliable, or effective for your device</li>
+            <li>The sound frequencies will successfully eject water or dust from every speaker type</li>
+            <li>Any errors or defects in the Service will be corrected</li>
+          </ul>
+          <div class="warning-box">
+            <span class="hb-icon">⚠️</span>
+            <p>Sound wave technology for speaker cleaning <strong>may not work for all devices or all levels of water
+                damage</strong>. Effectiveness varies based on your device model, speaker design, and the extent of
+              water or dust exposure. We do not guarantee any specific outcome.</p>
+          </div>
+          <p>You use the Service entirely at your own risk. We strongly recommend turning your device's volume to
+            maximum before use and following all usage instructions for best results.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 5. LIMITATION OF LIABILITY -->
+        <section class="terms-section" id="liability" aria-labelledby="sec-liability">
+          <h2 id="sec-liability">
+            <span class="sec-icon" aria-hidden="true">⚖️</span>
+            Limitation of Liability
+          </h2>
+          <p>To the fullest extent permitted by applicable law, Fix My Speaker and its owners, operators, employees, and
+            affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive
+            damages arising from:</p>
+          <ul>
+            <li>Your use of, or inability to use, the Service</li>
+            <li>Any damage to your device or speaker that occurs while using the Service</li>
+            <li>The failure of the Service to eject water or dust from your speaker</li>
+            <li>Any reliance you place on information or results provided by the Service</li>
+            <li>Any interruption, suspension, or termination of the Service</li>
+            <li>Any unauthorised access to or alteration of your data</li>
+          </ul>
+          <div class="highlight-box">
+            <span class="hb-icon">💡</span>
+            <p><strong>Important:</strong> Fix My Speaker is a free tool provided in good faith. We take no
+              responsibility for pre-existing device damage, damage caused by extreme water exposure, or any outcome
+              beyond what a reasonable first-response audio tool can achieve.</p>
+          </div>
+          <p>Some jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental
+            damages. In such jurisdictions, our liability is limited to the greatest extent permitted by law.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 6. INTELLECTUAL PROPERTY -->
+        <section class="terms-section" id="ip" aria-labelledby="sec-ip">
+          <h2 id="sec-ip">
+            <span class="sec-icon" aria-hidden="true">©️</span>
+            Intellectual Property
+          </h2>
+          <p>All content on the Fix My Speaker website — including but not limited to the tool design, user interface,
+            text, graphics, logos, icons, page layouts, and code — is the intellectual property of Fix My Speaker and is
+            protected by applicable copyright and intellectual property laws.</p>
+          <p>You are granted a limited, non-exclusive, non-transferable licence to:</p>
+          <ul>
+            <li>Access and use the Service for personal, non-commercial purposes</li>
+            <li>Share a link to the website with others</li>
+          </ul>
+          <p>You may <strong>not</strong>:</p>
+          <ul>
+            <li>Copy, reproduce, or redistribute our content or tool without written permission</li>
+            <li>Create derivative works based on our website design or code</li>
+            <li>Use our brand name, logo, or trademarks without prior written consent</li>
+            <li>Frame or mirror any part of our website on another site</li>
+          </ul>
+          <p>If you would like to reference or feature Fix My Speaker on your platform, please <a
+              href="/contact-us">contact us</a> first.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 7. THIRD-PARTY LINKS -->
+        <section class="terms-section" id="third-party" aria-labelledby="sec-third">
+          <h2 id="sec-third">
+            <span class="sec-icon" aria-hidden="true">🔗</span>
+            Third-Party Links
+          </h2>
+          <p>Our website may contain links to third-party websites or services that are not owned or controlled by Fix
+            My Speaker. These links are provided for your convenience and informational purposes only.</p>
+          <p>Fix My Speaker has no control over, and assumes no responsibility for, the content, privacy policies, or
+            practices of any third-party websites. We do not endorse or make any representations about third-party
+            sites.</p>
+          <p>We encourage you to review the privacy policy and terms of any third-party site you visit. Your
+            interactions with third-party sites are governed by their own terms and policies.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 8. PRIVACY -->
+        <section class="terms-section" id="privacy" aria-labelledby="sec-privacy">
+          <h2 id="sec-privacy">
+            <span class="sec-icon" aria-hidden="true">🔒</span>
+            Privacy
+          </h2>
+          <p>Your use of Fix My Speaker is also governed by our <a href="/privacy-policy">Privacy Policy</a>, which is
+            incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices.
+          </p>
+          <p>In summary, Fix My Speaker does not collect personal data, does not use tracking cookies, does not access
+            your microphone, and does not require any account. The only browser storage we use is a single localStorage
+            key (<code>fms-theme</code>) to save your light or dark mode preference.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 9. SERVICE AVAILABILITY -->
+        <section class="terms-section" id="availability" aria-labelledby="sec-availability">
+          <h2 id="sec-availability">
+            <span class="sec-icon" aria-hidden="true">🌐</span>
+            Service Availability
+          </h2>
+          <p>We aim to keep Fix My Speaker available at all times, but we do not guarantee uninterrupted access. The
+            Service may be temporarily unavailable due to:</p>
+          <ul>
+            <li>Scheduled maintenance or updates</li>
+            <li>Hosting provider outages or technical issues</li>
+            <li>Circumstances beyond our reasonable control</li>
+          </ul>
+          <p>We reserve the right to modify, suspend, or discontinue the Service — or any part of it — at any time with
+            or without notice. We shall not be liable to you or any third party for any such modification, suspension,
+            or discontinuation.</p>
+          <p>The Service may not be available in all countries or regions. It is your responsibility to ensure that
+            using the Service complies with the laws applicable in your jurisdiction.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 10. GOVERNING LAW -->
+        <section class="terms-section" id="governing" aria-labelledby="sec-governing">
+          <h2 id="sec-governing">
+            <span class="sec-icon" aria-hidden="true">⚖️</span>
+            Governing Law
+          </h2>
+          <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to
+            conflict of law principles. Any disputes arising from or related to these Terms or your use of the Service
+            shall be resolved through good-faith negotiation in the first instance.</p>
+          <p>If a dispute cannot be resolved through negotiation, it shall be subject to the exclusive jurisdiction of
+            the courts in the applicable legal jurisdiction.</p>
+          <p>If any provision of these Terms is found to be unenforceable or invalid under applicable law, that
+            provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall
+            remain in full force and effect.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 11. CHANGES TO TERMS -->
+        <section class="terms-section" id="changes" aria-labelledby="sec-changes">
+          <h2 id="sec-changes">
+            <span class="sec-icon" aria-hidden="true">📝</span>
+            Changes to These Terms
+          </h2>
+          <p>We reserve the right to modify these Terms at any time. When we make changes:</p>
+          <ul>
+            <li>The "Last updated" date at the top of this page will be revised</li>
+            <li>Significant changes will be highlighted on the homepage where reasonably practical</li>
+            <li>Your continued use of the Service after changes constitutes your acceptance of the updated Terms</li>
+          </ul>
+          <p>We encourage you to review these Terms periodically to stay informed of any updates. These Terms were last
+            updated on <strong>April 7, 2025</strong>.</p>
+          <p>If you disagree with any changes to these Terms, your remedy is to stop using the Service.</p>
+        </section>
+
+        <hr class="terms-divider" />
+
+        <!-- 12. CONTACT -->
+        <section class="terms-section" id="contact" aria-labelledby="sec-contact">
+          <h2 id="sec-contact">
+            <span class="sec-icon" aria-hidden="true">✉️</span>
+            Contact Us
+          </h2>
+          <p>If you have any questions, concerns, or requests regarding these Terms and Conditions, please contact us:
+          </p>
+
+          <div class="contact-block">
+            <div class="cb-icon" aria-hidden="true">⚖️</div>
+            <div>
+              <h4>Legal Inquiries</h4>
+              <p>Email us at <a href="mailto:help@fix-my-speaker.org">help@fix-my-speaker.org</a> — we aim to respond
+                within 48 hours.</p>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="cb-icon" aria-hidden="true">💬</div>
+            <div>
+              <h4>General Contact</h4>
+              <p>For all other questions, visit our <a href="/contact-us">Contact Us</a> page.</p>
+            </div>
+          </div>
+
+          <div class="contact-block">
+            <div class="cb-icon" aria-hidden="true">🔒</div>
+            <div>
+              <h4>Privacy Concerns</h4>
+              <p>For privacy-related matters, please review our <a href="/privacy-policy">Privacy Policy</a> or email <a
+                  href="mailto:help@fix-my-speaker.org">help@fix-my-speaker.org</a>.</p>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo">
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
       <li><a href="/#how-to">How It Works</a></li>
       <li><a href="/#features">Features</a></li>
-      <li><a href="/#devices">Devices</a></li>
       <li><a href="/#faq">FAQ</a></li>
-      <li><a href="/" class="nav-cta">Clean Now →</a></li>
+      <li><a href="/about-us">About Us</a></li>
+      <li><a href="/contact-us">Contact Us</a></li>
+      <li><a href="/privacy-policy">Privacy Policy</a></li>
+      <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
     </ul>
-    <button class="theme-btn" id="themeBtn" aria-label="Toggle dark mode">
-      <span class="t-icon t-sun" aria-hidden="true">☀️</span>
-      <span class="t-icon t-moon" aria-hidden="true">🌙</span>
-    </button>
-    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
+    <p class="footer-copy">
+      © <span id="yr"></span> <a href="/">Fix My Speaker</a>. All rights reserved.
+    </p>
+  </footer>
 
-<main>
+  <script>
+    /* THEME */
+    (function () {
+      const root = document.documentElement;
+      const btn = document.getElementById('themeBtn');
+      const saved = localStorage.getItem('fms-theme') || 'light';
+      root.setAttribute('data-theme', saved);
+      btn.addEventListener('click', () => {
+        const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('fms-theme', next);
+      });
+    })();
 
-  <!-- PAGE HERO -->
-  <section class="page-hero" aria-labelledby="tc-h1">
-    <ol class="breadcrumb" aria-label="Breadcrumb">
-      <li><a href="/">Home</a></li>
-      <li aria-hidden="true">›</li>
-      <li aria-current="page">Terms and Conditions</li>
-    </ol>
-    <h1 id="tc-h1">Terms &amp; <em>Conditions</em></h1>
-    <p>Please read these terms carefully before using Fix My Speaker. By accessing our website and tool, you agree to be bound by these terms.</p>
-    <div class="updated-badge">📅 Last updated: April 7, 2025</div>
-  </section>
-
-  <!-- MAIN LAYOUT -->
-  <div class="terms-layout">
-
-    <!-- SIDEBAR TOC -->
-    <nav class="toc" aria-label="Table of contents">
-      <div class="toc-title">On This Page</div>
-      <ul class="toc-list" id="tocList">
-        <li><a href="#acceptance">Acceptance of Terms</a></li>
-        <li><a href="#description">Service Description</a></li>
-        <li><a href="#use">Acceptable Use</a></li>
-        <li><a href="#disclaimer">Disclaimer of Warranties</a></li>
-        <li><a href="#liability">Limitation of Liability</a></li>
-        <li><a href="#ip">Intellectual Property</a></li>
-        <li><a href="#third-party">Third-Party Links</a></li>
-        <li><a href="#privacy">Privacy</a></li>
-        <li><a href="#availability">Service Availability</a></li>
-        <li><a href="#governing">Governing Law</a></li>
-        <li><a href="#changes">Changes to Terms</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <!-- TERMS CONTENT -->
-    <article class="terms-content" aria-label="Terms and conditions content">
-
-      <!-- SUMMARY PILLS -->
-      <div class="terms-summary" aria-label="Key terms summary">
-        <div class="summary-pill">
-          <div class="sp-icon">✅</div>
-          <div class="sp-label">Free to Use</div>
-          <div class="sp-val">No fees or charges</div>
-        </div>
-        <div class="summary-pill">
-          <div class="sp-icon">⚠️</div>
-          <div class="sp-label">No Guarantees</div>
-          <div class="sp-val">Results may vary</div>
-        </div>
-        <div class="summary-pill">
-          <div class="sp-icon">🔒</div>
-          <div class="sp-label">Privacy Protected</div>
-          <div class="sp-val">No data collection</div>
-        </div>
-        <div class="summary-pill">
-          <div class="sp-icon">🚫</div>
-          <div class="sp-label">No Misuse</div>
-          <div class="sp-val">Fair use only</div>
-        </div>
-        <div class="summary-pill">
-          <div class="sp-icon">©️</div>
-          <div class="sp-label">Our IP</div>
-          <div class="sp-val">Content is protected</div>
-        </div>
-        <div class="summary-pill">
-          <div class="sp-icon">⚖️</div>
-          <div class="sp-label">Governed by Law</div>
-          <div class="sp-val">Fair legal terms</div>
-        </div>
-      </div>
-
-      <!-- 1. ACCEPTANCE -->
-      <section class="terms-section" id="acceptance" aria-labelledby="sec-acceptance">
-        <h2 id="sec-acceptance">
-          <span class="sec-icon" aria-hidden="true">📋</span>
-          Acceptance of Terms
-        </h2>
-        <p>By accessing or using the Fix My Speaker website at <a href="https://fix-my-speaker.org/">https://fix-my-speaker.org/</a> ("the Service"), you confirm that you have read, understood, and agree to be bound by these Terms and Conditions ("Terms").</p>
-        <p>If you do not agree to these Terms, please do not use the Service. Your continued use of the website following any updates to these Terms constitutes your acceptance of those changes.</p>
-        <p>These Terms apply to all visitors, users, and anyone who accesses or uses the Service.</p>
-        <div class="highlight-box">
-          <span class="hb-icon">💡</span>
-          <p><strong>Plain English:</strong> By pressing the clean button and using this site, you're agreeing to these terms. They're straightforward and fair.</p>
-        </div>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 2. SERVICE DESCRIPTION -->
-      <section class="terms-section" id="description" aria-labelledby="sec-description">
-        <h2 id="sec-description">
-          <span class="sec-icon" aria-hidden="true">🔊</span>
-          Service Description
-        </h2>
-        <p>Fix My Speaker is a free, browser-based tool that uses the Web Audio API to generate sound frequencies intended to help eject water and dislodge dust from phone and device speakers. The Service operates entirely within your web browser and requires no download, installation, or account registration.</p>
-        <p>The Service provides:</p>
-        <ul>
-          <li>Sound Wave Mode — cycles through multiple audio frequencies to vibrate speaker components</li>
-          <li>Vibration Mode — generates broadband noise to dislodge debris from speaker mesh</li>
-          <li>A progress indicator showing the duration of each cleaning cycle</li>
-        </ul>
-        <div class="warning-box">
-          <span class="hb-icon">⚠️</span>
-          <p>Fix My Speaker is a <strong>first-response tool</strong>, not a professional repair service. It is designed to help with minor water and dust exposure. It cannot repair physical speaker damage, corrosion, or hardware failure. For severe damage, always consult a professional repair service.</p>
-        </div>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 3. ACCEPTABLE USE -->
-      <section class="terms-section" id="use" aria-labelledby="sec-use">
-        <h2 id="sec-use">
-          <span class="sec-icon" aria-hidden="true">✅</span>
-          Acceptable Use
-        </h2>
-        <p>You may use Fix My Speaker for personal, non-commercial purposes in accordance with these Terms. When using the Service, you agree that you will not:</p>
-        <ul>
-          <li>Attempt to reverse engineer, decompile, or extract the source code of the Service for commercial purposes</li>
-          <li>Use automated scripts, bots, or scrapers to excessively request or scrape the Service</li>
-          <li>Attempt to gain unauthorised access to any part of our infrastructure</li>
-          <li>Use the Service in any way that could damage, disable, overburden, or impair its functionality</li>
-          <li>Reproduce, duplicate, copy, or sell any portion of the Service without express written permission</li>
-          <li>Use the Service to transmit spam, malware, or any harmful content</li>
-          <li>Misrepresent the Service or your affiliation with Fix My Speaker</li>
-        </ul>
-        <p>We reserve the right to restrict access to the Service for any user who violates these Terms or who we reasonably believe is misusing the Service.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 4. DISCLAIMER OF WARRANTIES -->
-      <section class="terms-section" id="disclaimer" aria-labelledby="sec-disclaimer">
-        <h2 id="sec-disclaimer">
-          <span class="sec-icon" aria-hidden="true">⚠️</span>
-          Disclaimer of Warranties
-        </h2>
-        <p>Fix My Speaker is provided on an <strong>"as is"</strong> and <strong>"as available"</strong> basis without warranties of any kind, either express or implied.</p>
-        <p>We make no warranties or representations that:</p>
-        <ul>
-          <li>The Service will meet your specific requirements or expectations</li>
-          <li>The Service will be uninterrupted, timely, secure, or error-free</li>
-          <li>The results obtained from the Service will be accurate, reliable, or effective for your device</li>
-          <li>The sound frequencies will successfully eject water or dust from every speaker type</li>
-          <li>Any errors or defects in the Service will be corrected</li>
-        </ul>
-        <div class="warning-box">
-          <span class="hb-icon">⚠️</span>
-          <p>Sound wave technology for speaker cleaning <strong>may not work for all devices or all levels of water damage</strong>. Effectiveness varies based on your device model, speaker design, and the extent of water or dust exposure. We do not guarantee any specific outcome.</p>
-        </div>
-        <p>You use the Service entirely at your own risk. We strongly recommend turning your device's volume to maximum before use and following all usage instructions for best results.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 5. LIMITATION OF LIABILITY -->
-      <section class="terms-section" id="liability" aria-labelledby="sec-liability">
-        <h2 id="sec-liability">
-          <span class="sec-icon" aria-hidden="true">⚖️</span>
-          Limitation of Liability
-        </h2>
-        <p>To the fullest extent permitted by applicable law, Fix My Speaker and its owners, operators, employees, and affiliates shall not be liable for any direct, indirect, incidental, special, consequential, or punitive damages arising from:</p>
-        <ul>
-          <li>Your use of, or inability to use, the Service</li>
-          <li>Any damage to your device or speaker that occurs while using the Service</li>
-          <li>The failure of the Service to eject water or dust from your speaker</li>
-          <li>Any reliance you place on information or results provided by the Service</li>
-          <li>Any interruption, suspension, or termination of the Service</li>
-          <li>Any unauthorised access to or alteration of your data</li>
-        </ul>
-        <div class="highlight-box">
-          <span class="hb-icon">💡</span>
-          <p><strong>Important:</strong> Fix My Speaker is a free tool provided in good faith. We take no responsibility for pre-existing device damage, damage caused by extreme water exposure, or any outcome beyond what a reasonable first-response audio tool can achieve.</p>
-        </div>
-        <p>Some jurisdictions do not allow the exclusion or limitation of liability for consequential or incidental damages. In such jurisdictions, our liability is limited to the greatest extent permitted by law.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 6. INTELLECTUAL PROPERTY -->
-      <section class="terms-section" id="ip" aria-labelledby="sec-ip">
-        <h2 id="sec-ip">
-          <span class="sec-icon" aria-hidden="true">©️</span>
-          Intellectual Property
-        </h2>
-        <p>All content on the Fix My Speaker website — including but not limited to the tool design, user interface, text, graphics, logos, icons, page layouts, and code — is the intellectual property of Fix My Speaker and is protected by applicable copyright and intellectual property laws.</p>
-        <p>You are granted a limited, non-exclusive, non-transferable licence to:</p>
-        <ul>
-          <li>Access and use the Service for personal, non-commercial purposes</li>
-          <li>Share a link to the website with others</li>
-        </ul>
-        <p>You may <strong>not</strong>:</p>
-        <ul>
-          <li>Copy, reproduce, or redistribute our content or tool without written permission</li>
-          <li>Create derivative works based on our website design or code</li>
-          <li>Use our brand name, logo, or trademarks without prior written consent</li>
-          <li>Frame or mirror any part of our website on another site</li>
-        </ul>
-        <p>If you would like to reference or feature Fix My Speaker on your platform, please <a href="/contact-us">contact us</a> first.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 7. THIRD-PARTY LINKS -->
-      <section class="terms-section" id="third-party" aria-labelledby="sec-third">
-        <h2 id="sec-third">
-          <span class="sec-icon" aria-hidden="true">🔗</span>
-          Third-Party Links
-        </h2>
-        <p>Our website may contain links to third-party websites or services that are not owned or controlled by Fix My Speaker. These links are provided for your convenience and informational purposes only.</p>
-        <p>Fix My Speaker has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites. We do not endorse or make any representations about third-party sites.</p>
-        <p>We encourage you to review the privacy policy and terms of any third-party site you visit. Your interactions with third-party sites are governed by their own terms and policies.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 8. PRIVACY -->
-      <section class="terms-section" id="privacy" aria-labelledby="sec-privacy">
-        <h2 id="sec-privacy">
-          <span class="sec-icon" aria-hidden="true">🔒</span>
-          Privacy
-        </h2>
-        <p>Your use of Fix My Speaker is also governed by our <a href="/privacy-policy">Privacy Policy</a>, which is incorporated into these Terms by reference. Please review our Privacy Policy to understand our practices.</p>
-        <p>In summary, Fix My Speaker does not collect personal data, does not use tracking cookies, does not access your microphone, and does not require any account. The only browser storage we use is a single localStorage key (<code>fms-theme</code>) to save your light or dark mode preference.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 9. SERVICE AVAILABILITY -->
-      <section class="terms-section" id="availability" aria-labelledby="sec-availability">
-        <h2 id="sec-availability">
-          <span class="sec-icon" aria-hidden="true">🌐</span>
-          Service Availability
-        </h2>
-        <p>We aim to keep Fix My Speaker available at all times, but we do not guarantee uninterrupted access. The Service may be temporarily unavailable due to:</p>
-        <ul>
-          <li>Scheduled maintenance or updates</li>
-          <li>Hosting provider outages or technical issues</li>
-          <li>Circumstances beyond our reasonable control</li>
-        </ul>
-        <p>We reserve the right to modify, suspend, or discontinue the Service — or any part of it — at any time with or without notice. We shall not be liable to you or any third party for any such modification, suspension, or discontinuation.</p>
-        <p>The Service may not be available in all countries or regions. It is your responsibility to ensure that using the Service complies with the laws applicable in your jurisdiction.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 10. GOVERNING LAW -->
-      <section class="terms-section" id="governing" aria-labelledby="sec-governing">
-        <h2 id="sec-governing">
-          <span class="sec-icon" aria-hidden="true">⚖️</span>
-          Governing Law
-        </h2>
-        <p>These Terms shall be governed by and construed in accordance with applicable laws, without regard to conflict of law principles. Any disputes arising from or related to these Terms or your use of the Service shall be resolved through good-faith negotiation in the first instance.</p>
-        <p>If a dispute cannot be resolved through negotiation, it shall be subject to the exclusive jurisdiction of the courts in the applicable legal jurisdiction.</p>
-        <p>If any provision of these Terms is found to be unenforceable or invalid under applicable law, that provision shall be limited or eliminated to the minimum extent necessary, and the remaining provisions shall remain in full force and effect.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 11. CHANGES TO TERMS -->
-      <section class="terms-section" id="changes" aria-labelledby="sec-changes">
-        <h2 id="sec-changes">
-          <span class="sec-icon" aria-hidden="true">📝</span>
-          Changes to These Terms
-        </h2>
-        <p>We reserve the right to modify these Terms at any time. When we make changes:</p>
-        <ul>
-          <li>The "Last updated" date at the top of this page will be revised</li>
-          <li>Significant changes will be highlighted on the homepage where reasonably practical</li>
-          <li>Your continued use of the Service after changes constitutes your acceptance of the updated Terms</li>
-        </ul>
-        <p>We encourage you to review these Terms periodically to stay informed of any updates. These Terms were last updated on <strong>April 7, 2025</strong>.</p>
-        <p>If you disagree with any changes to these Terms, your remedy is to stop using the Service.</p>
-      </section>
-
-      <hr class="terms-divider" />
-
-      <!-- 12. CONTACT -->
-      <section class="terms-section" id="contact" aria-labelledby="sec-contact">
-        <h2 id="sec-contact">
-          <span class="sec-icon" aria-hidden="true">✉️</span>
-          Contact Us
-        </h2>
-        <p>If you have any questions, concerns, or requests regarding these Terms and Conditions, please contact us:</p>
-
-        <div class="contact-block">
-          <div class="cb-icon" aria-hidden="true">⚖️</div>
-          <div>
-            <h4>Legal Inquiries</h4>
-            <p>Email us at <a href="mailto:legal@fix-my-speaker.org">legal@fix-my-speaker.org</a> — we aim to respond within 48 hours.</p>
-          </div>
-        </div>
-
-        <div class="contact-block">
-          <div class="cb-icon" aria-hidden="true">💬</div>
-          <div>
-            <h4>General Contact</h4>
-            <p>For all other questions, visit our <a href="/contact-us">Contact Us</a> page.</p>
-          </div>
-        </div>
-
-        <div class="contact-block">
-          <div class="cb-icon" aria-hidden="true">🔒</div>
-          <div>
-            <h4>Privacy Concerns</h4>
-            <p>For privacy-related matters, please review our <a href="/privacy-policy">Privacy Policy</a> or email <a href="mailto:privacy@fix-my-speaker.org">privacy@fix-my-speaker.org</a>.</p>
-          </div>
-        </div>
-      </section>
-
-    </article>
-  </div>
-
-</main>
-
-<!-- FOOTER -->
-<footer role="contentinfo">
-  <ul class="footer-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/#how-to">How It Works</a></li>
-    <li><a href="/#features">Features</a></li>
-    <li><a href="/#faq">FAQ</a></li>
-    <li><a href="/about-us">About Us</a></li>
-    <li><a href="/contact-us">Contact Us</a></li>
-    <li><a href="/privacy-policy">Privacy Policy</a></li>
-    <li><a href="/terms-and-conditions">Terms &amp; Conditions</a></li>
-  </ul>
-  <p class="footer-copy">
-    © <span id="yr"></span> <a href="/">Fix My Speaker</a>. All rights reserved.
-  </p>
-</footer>
-
-<script>
-  /* THEME */
-  (function () {
-    const root = document.documentElement;
-    const btn = document.getElementById('themeBtn');
-    const saved = localStorage.getItem('fms-theme') || 'light';
-    root.setAttribute('data-theme', saved);
-    btn.addEventListener('click', () => {
-      const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('fms-theme', next);
+    /* NAV */
+    document.getElementById('hamburger').addEventListener('click', function () {
+      const open = document.getElementById('navLinks').classList.toggle('open');
+      this.setAttribute('aria-expanded', open);
     });
-  })();
 
-  /* NAV */
-  document.getElementById('hamburger').addEventListener('click', function () {
-    const open = document.getElementById('navLinks').classList.toggle('open');
-    this.setAttribute('aria-expanded', open);
-  });
+    /* YEAR */
+    document.getElementById('yr').textContent = new Date().getFullYear();
 
-  /* YEAR */
-  document.getElementById('yr').textContent = new Date().getFullYear();
+    /* ACTIVE TOC ON SCROLL */
+    const sections = document.querySelectorAll('.terms-section');
+    const tocLinks = document.querySelectorAll('.toc-list a');
 
-  /* ACTIVE TOC ON SCROLL */
-  const sections = document.querySelectorAll('.terms-section');
-  const tocLinks = document.querySelectorAll('.toc-list a');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        tocLinks.forEach(l => l.classList.remove('active'));
-        const active = document.querySelector(`.toc-list a[href="#${entry.target.id}"]`);
-        if (active) active.classList.add('active');
-      }
-    });
-  }, { rootMargin: '-20% 0px -70% 0px' });
-
-  sections.forEach(s => observer.observe(s));
-</script>
+    sections.forEach(s => observer.observe(s));
+  </script>
 
 </body>
+
 </html>
