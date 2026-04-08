@@ -9,7 +9,7 @@ LIGHT THEME (default)
     --surface2: #edf0fb;
     --border: rgba(0, 0, 0, 0.09);
     --text: #0b1230;
-    --text2: #5560880;
+    --text2: #556088;
     --text-muted: #7a85aa;
     --accent: #1a5fff;
     --accent-h: #3472ff;
@@ -952,5 +952,209 @@ footer {
 
     .cta-banner {
         padding: 34px 20px;
+    }
+}
+
+/* addisional section css */
+
+/* ===================================
+INFORMATIONAL SECTIONS
+=================================== */
+
+/* Content block (long-form paragraphs) */
+.content-block p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+    margin-bottom: 1.2rem;
+    max-width: 780px;
+}
+
+.content-block p:last-child {
+    margin-bottom: 0;
+}
+
+/* 2-column info card grid */
+.content-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 44px;
+}
+
+.info-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 26px 22px;
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--hover-shadow);
+}
+
+.info-icon {
+    font-size: 1.9rem;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.info-card h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 0.96rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.info-card p {
+    font-size: 0.86rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+/* Warning box */
+.warning-box {
+    background: rgba(245, 158, 11, 0.08);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    border-left: 4px solid var(--star);
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin-top: 32px;
+    font-size: 0.9rem;
+    line-height: 1.72;
+    color: var(--text-muted);
+}
+
+.warning-box strong {
+    color: var(--text);
+}
+
+/* Comparison grid */
+.compare-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-top: 44px;
+}
+
+.compare-card {
+    border-radius: 18px;
+    padding: 28px 24px;
+    border: 1px solid var(--border);
+}
+
+.compare-water {
+    background: rgba(26, 95, 255, 0.05);
+    border-color: rgba(26, 95, 255, 0.2);
+}
+
+.compare-dust {
+    background: rgba(0, 212, 255, 0.05);
+    border-color: rgba(0, 212, 255, 0.2);
+}
+
+.compare-card h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 18px;
+}
+
+.compare-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.compare-card li {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+    padding-left: 14px;
+    position: relative;
+}
+
+.compare-card li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.compare-card li strong {
+    color: var(--text);
+}
+
+/* Myths list */
+.myths-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 44px;
+}
+
+.myth-item {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px;
+    transition: background 0.3s;
+}
+
+.myth-label {
+    flex-shrink: 0;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+.myth-false {
+    background: rgba(192, 57, 43, 0.1);
+    color: var(--cross);
+}
+
+.myth-true {
+    background: rgba(10, 124, 62, 0.1);
+    color: var(--check);
+}
+
+.myth-content h3 {
+    font-family: "Sora", sans-serif;
+    font-size: 0.93rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.myth-content p {
+    font-size: 0.86rem;
+    line-height: 1.72;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.myth-content p strong {
+    color: var(--text);
+}
+
+@media (max-width: 560px) {
+    .myth-item {
+        flex-direction: column;
+        gap: 10px;
     }
 }
