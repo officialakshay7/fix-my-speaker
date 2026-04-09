@@ -1,3 +1,15 @@
+/* ── CACHED ACCENT — declared first so IIFE can reference it ── */
+let cachedAccent = "";
+
+function getCachedAccent() {
+    if (!cachedAccent) {
+        cachedAccent = getComputedStyle(document.documentElement)
+            .getPropertyValue("--accent")
+            .trim();
+    }
+    return cachedAccent;
+}
+
 /* ── THEME TOGGLE ── */
 (function () {
     const root = document.documentElement;
@@ -9,6 +21,7 @@
             root.getAttribute("data-theme") === "dark" ? "light" : "dark";
         root.setAttribute("data-theme", next);
         localStorage.setItem("fms-theme", next);
+        cachedAccent = ""; // invalidate cache on theme change
     });
 })();
 
@@ -26,7 +39,7 @@ document
 document.getElementById("yr").textContent = new Date().getFullYear();
 
 /* ── CLEANER ENGINE ── */
-const ARC_LEN = Math.PI * 110; // semicircle r=110 ≈ 345.6
+const ARC_LEN = Math.PI * 110;
 
 let mode = "sound",
     running = false,
@@ -47,6 +60,7 @@ function getCtx() {
     if (audioCtx.state === "suspended") audioCtx.resume();
     return audioCtx;
 }
+
 function stopAudio() {
     if (currentNode) {
         try {
@@ -55,6 +69,7 @@ function stopAudio() {
         currentNode = null;
     }
 }
+
 function playTone(f) {
     stopAudio();
     const ctx = getCtx(),
@@ -68,6 +83,7 @@ function playTone(f) {
     osc.start();
     currentNode = osc;
 }
+
 function playVibration() {
     stopAudio();
     const ctx = getCtx(),
@@ -88,8 +104,10 @@ function playVibration() {
 
 function updateRing(pct) {
     const off = ARC_LEN * (1 - pct / 100);
-    document.getElementById("arcFg").style.strokeDashoffset = off;
-    document.getElementById("pctLabel").textContent = Math.round(pct) + "%";
+    requestAnimationFrame(() => {
+        document.getElementById("arcFg").style.strokeDashoffset = off;
+        document.getElementById("pctLabel").textContent = Math.round(pct) + "%";
+    });
 }
 
 function startProgress() {
@@ -108,26 +126,22 @@ function startProgress() {
     animFrame = requestAnimationFrame(tick);
 }
 
-function cssVar(name) {
-    return getComputedStyle(document.documentElement)
-        .getPropertyValue(name)
-        .trim();
-}
 function spawnRipple() {
     const o = document.getElementById("rippleOverlay");
     const el = document.createElement("div");
     el.className = "ripple-circle";
     const s = 50 + Math.random() * 70;
-    el.style.cssText = `width:${s}px;height:${s}px;left:${Math.random() * 90 + 5}%;top:${Math.random() * 90 + 5}%;border-color:${cssVar("--accent")}`;
+    el.style.cssText = `width:${s}px;height:${s}px;left:${Math.random() * 90 + 5}%;top:${Math.random() * 90 + 5}%;border-color:${getCachedAccent()}`;
     o.appendChild(el);
     setTimeout(() => el.remove(), 1600);
 }
+
 function spawnParticle() {
     const o = document.getElementById("rippleOverlay");
     const el = document.createElement("div");
     el.className = "particle";
     const s = 4 + Math.random() * 5;
-    el.style.cssText = `width:${s}px;height:${s}px;left:${20 + Math.random() * 60}%;bottom:${8 + Math.random() * 18}%;animation-duration:${0.8 + Math.random() * 0.8}s;background:${cssVar("--accent")}`;
+    el.style.cssText = `width:${s}px;height:${s}px;left:${20 + Math.random() * 60}%;bottom:${8 + Math.random() * 18}%;animation-duration:${0.8 + Math.random() * 0.8}s;background:${getCachedAccent()}`;
     o.appendChild(el);
     setTimeout(() => el.remove(), 1400);
 }
@@ -187,25 +201,17 @@ function stopCleaner(done) {
     if (done) {
         document.getElementById("ejectIcon").textContent = "✔";
         document.getElementById("ejectLabel").textContent = "CLEANING DONE!";
-        btn.setAttribute(
-            "aria-label",
-            "Cleaning complete. Press to run again.",
-        );
+        btn.setAttribute("aria-label", "Cleaning complete. Press to run again.");
         setTimeout(() => {
             document.getElementById("ejectIcon").textContent = "▶";
-            document.getElementById("ejectLabel").textContent =
-                "PRESS TO EJECT WATER";
+            document.getElementById("ejectLabel").textContent = "PRESS TO EJECT WATER";
             updateRing(0);
             progress = 0;
         }, 2500);
     } else {
         document.getElementById("ejectIcon").textContent = "▶";
-        document.getElementById("ejectLabel").textContent =
-            "PRESS TO EJECT WATER";
-        btn.setAttribute(
-            "aria-label",
-            "Press to start ejecting water from speaker",
-        );
+        document.getElementById("ejectLabel").textContent = "PRESS TO EJECT WATER";
+        btn.setAttribute("aria-label", "Press to start ejecting water from speaker");
         updateRing(0);
         progress = 0;
     }
