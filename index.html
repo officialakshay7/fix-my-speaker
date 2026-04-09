@@ -345,7 +345,7 @@
       line-height: 1.75
     }
 
-    .cleaner-card {
+    /* .cleaner-card {
       background: transparent;
       border: none;
       box-shadow: none;
@@ -415,6 +415,78 @@
     .stars-row {
       text-align: center;
       min-height: 44px
+    } */
+
+    .cleaner-card {
+      min-height: 520px;
+      height: 520px;
+      contain: layout size;
+    }
+
+    .arc-wrap {
+      width: 260px;
+      height: 145px;
+      flex-shrink: 0;
+      flex-grow: 0;
+    }
+
+    .arc-svg {
+      width: 260px;
+      height: 145px;
+      display: block;
+    }
+
+    .arc-pct {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 2.6rem;
+      font-weight: 800;
+      line-height: 1;
+      min-width: 90px;
+      min-height: 52px;
+      white-space: nowrap;
+    }
+
+    .mode-label {
+      min-height: 18px;
+      font-size: 0.7rem;
+    }
+
+    .mode-tabs {
+      width: 240px;
+      height: 42px;
+      flex-shrink: 0;
+    }
+
+    .eject-btn {
+      width: 88px;
+      height: 88px;
+      flex-shrink: 0;
+    }
+
+    .eject-label {
+      min-height: 20px;
+      font-size: 0.68rem;
+    }
+
+    .stars-row {
+      min-height: 48px;
+    }
+
+    .stars {
+      font-size: 1.15rem;
+      letter-spacing: 2px;
+      min-height: 24px;
+      display: block;
+    }
+
+    .stars-label {
+      font-size: 0.77rem;
+      min-height: 18px;
+      display: block;
+      margin-top: 3px;
     }
   </style>
 
