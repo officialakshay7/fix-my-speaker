@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
-
+Disallow: /privacy-policy/
+Disallow: /terms-and-conditions/
+Disallow: /disclaimer/
 Sitemap: https://fix-my-speaker.org/sitemap.xml

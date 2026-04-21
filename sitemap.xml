@@ -1,37 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://fix-my-speaker.org/</loc>
-  <lastmod>2026-04-06T06:05:55+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://fix-my-speaker.org/about-us</loc>
-  <lastmod>2026-04-06T06:05:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fix-my-speaker.org/contact-us</loc>
-  <lastmod>2026-04-06T06:05:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fix-my-speaker.org/privacy-policy</loc>
-  <lastmod>2026-04-06T06:05:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fix-my-speaker.org/terms-and-conditions</loc>
-  <lastmod>2026-04-06T06:05:55+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://fix-my-speaker.org/</loc>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/eject-water-from-speaker/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/fix-speaker-volume/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/fix-speaker-water/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/water-eject-iphone/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/fix-speaker-dust/</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/blog/</loc>
+    <priority>0.8</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/blog/does-rice-fix-water-damaged-speaker/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/blog/how-to-clean-iphone-speaker/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/blog/best-way-to-dry-wet-speaker/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/blog/signs-your-speaker-needs-cleaning/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/blog/phone-speaker-maintenance-tips/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/blog/ip68-water-resistance-explained/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/blog/how-often-clean-phone-speaker/</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/about-us/</loc>
+    <priority>0.6</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/contact-us/</loc>
+    <priority>0.5</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/privacy-policy/</loc>
+    <priority>0.2</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/terms-and-conditions/</loc>
+    <priority>0.2</priority>
+    <changefreq>yearly</changefreq>
+  </url>
+  <url>
+    <loc>https://fix-my-speaker.org/disclaimer/</loc>
+    <priority>0.2</priority>
+    <changefreq>yearly</changefreq>
+  </url>
 </urlset>

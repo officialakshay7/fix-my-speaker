@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+<rect width="1200" height="630" fill="#fff"/>
+<rect y="0" width="1200" height="4" fill="#0073aa"/>
+<rect x="0" y="626" width="1200" height="4" fill="#0073aa"/>
+<rect x="80" y="80" width="1040" height="470" rx="16" fill="#f3f9fd" stroke="#c2d9f0" stroke-width="2"/>
+<text x="600" y="260" font-family="system-ui,sans-serif" font-size="80" text-anchor="middle">🔊</text>
+<text x="600" y="340" font-family="system-ui,sans-serif" font-weight="800" font-size="52" fill="#23282d" text-anchor="middle">Fix My Speaker</text>
+<text x="600" y="395" font-family="system-ui,sans-serif" font-size="24" fill="#0073aa" text-anchor="middle">Eject Water &amp; Dust · Free · No Download Required</text>
+<text x="600" y="500" font-family="system-ui,sans-serif" font-size="20" fill="#999" text-anchor="middle">fix-my-speaker.org</text>
+</svg>
