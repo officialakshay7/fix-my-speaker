@@ -1,3 +1,5 @@
+// Fix My Speaker — main.js
+// Audio engine + UI handlers
 'use strict';
 
 // Year

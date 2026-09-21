@@ -1,1 +1,18 @@
-{"name":"Fix My Speaker","short_name":"Fix Speaker","start_url":"/","display":"standalone","background_color":"#ffffff","theme_color":"#0073aa","icons":[{"src":"/img/favicon/favicon.svg","sizes":"any","type":"image/svg+xml"}]}
+{
+  "name": "Fix My Speaker",
+  "short_name": "Fix Speaker",
+  "description": "Free browser tool to eject water and dust from phone speakers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0073aa",
+  "lang": "en",
+  "icons": [
+    {"src": "/img/favicon/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"},
+    {"src": "/img/favicon/favicon.ico", "sizes": "16x16 32x32", "type": "image/x-icon"}
+  ],
+  "categories": ["utilities", "productivity"],
+  "shortcuts": [
+    {"name": "Fix My Speaker", "url": "/", "description": "Eject water and dust from your speaker"}
+  ]
+}

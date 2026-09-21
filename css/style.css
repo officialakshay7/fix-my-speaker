@@ -4,7 +4,7 @@
    Fonts: Inter (body) + system sans (headings)
    ================================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 /* ── RESET ── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -614,3 +614,32 @@ input,textarea,select{font-family:inherit}
   .comp-table{font-size:0.8rem}
   .comp-table th,.comp-table td{padding:8px 10px}
 }
+
+
+/* ── ACCESSIBILITY ── */
+:focus-visible {
+  outline: 2px solid #0073aa;
+  outline-offset: 2px;
+}
+.skip-link {
+  position: absolute;left:-9999px;top:0;
+  background:#0073aa;color:#fff;padding:8px 16px;
+  z-index:10000;border-radius:0 0 4px 0;
+  font-size:0.85rem;font-weight:600;
+}
+.skip-link:focus{left:0}
+
+/* ── PRINT ── */
+@media print {
+  .site-header,.nav-hamburger,.mobile-nav,.site-footer,
+  .eject-btn,.mode-tabs,.vol-row,.tool-rating{display:none!important}
+  body{font-size:12pt;color:#000}
+  a{color:#000;text-decoration:underline}
+  .container{max-width:100%}
+}
+
+/* ── SMOOTH SCROLL POLYFILL ── */
+html{scroll-behavior:smooth}
+
+/* ── SELECTION COLOUR ── */
+::selection{background:#0073aa;color:#fff}
