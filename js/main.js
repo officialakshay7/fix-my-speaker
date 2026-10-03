@@ -30,19 +30,42 @@ document.querySelectorAll('.faq-q').forEach(btn=>{
   });
 });
 
-// Contact form
+// Contact form — sends via the form's action URL; falls back to the visitor's email app
+// until a real endpoint is configured (replace YOUR_FORM_ID in contact-us/index.html).
 (function(){
   const form = document.getElementById('contactForm');
   if(!form) return;
-  form.addEventListener('submit',e=>{
+  const TO = 'hello@fix-my-speaker.org';
+  const showSuccess = (title, text) => {
+    form.style.display = 'none';
+    const s = document.getElementById('formSuccess');
+    const t = document.getElementById('formSuccessTitle');
+    const x = document.getElementById('formSuccessText');
+    if(t && title) t.textContent = title;
+    if(x && text) x.textContent = text;
+    if(s) s.classList.add('show');
+  };
+  form.addEventListener('submit', async e => {
     e.preventDefault();
+    if(!form.reportValidity()) return;
     const btn = form.querySelector('[type=submit]');
+    const data = new FormData(form);
+    if(form.action.includes('YOUR_FORM_ID')){
+      const subject = data.get('subject') || 'Message from fix-my-speaker.org';
+      const body = `${data.get('message')}\n\n— ${data.get('name')} (${data.get('email')})`;
+      window.location.href = `mailto:${TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      showSuccess('Almost done', 'Your email app should open with your message ready — just press Send.');
+      return;
+    }
     btn.textContent = 'Sending…'; btn.disabled = true;
-    setTimeout(()=>{
-      form.style.display='none';
-      const s = document.getElementById('formSuccess');
-      if(s) s.classList.add('show');
-    },1000);
+    try{
+      const res = await fetch(form.action, { method:'POST', body:data, headers:{ 'Accept':'application/json' } });
+      if(!res.ok) throw new Error('Request failed');
+      showSuccess();
+    }catch(err){
+      btn.textContent = 'Send Message'; btn.disabled = false;
+      alert('Sorry, your message could not be sent. Please email ' + TO + '.');
+    }
   });
 })();
 
@@ -72,8 +95,9 @@ class SpeakerTool {
 
     this.$tabs.forEach(t=>t.addEventListener('click',()=>{
       if(this.running) this.stop();
-      this.$tabs.forEach(x=>x.classList.remove('active'));
+      this.$tabs.forEach(x=>{ x.classList.remove('active'); x.setAttribute('aria-selected','false'); });
       t.classList.add('active');
+      t.setAttribute('aria-selected','true');
       this.mode = t.dataset.mode;
     }));
 

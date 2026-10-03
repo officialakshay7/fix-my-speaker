@@ -1,15 +1,14 @@
-/* ================================================================
-   Fix My Speaker — Exact Design Clone (fix-myspeaker.com style)
-   White background · Clean editorial · WordPress-like layout
-   Fonts: Inter (body) + system sans (headings)
-   ================================================================ */
+/* Fix My Speaker — site styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+/* Inter (self-hosted, Latin subset, weights 400–700; SIL OFL — see /fonts/Inter-LICENSE.txt) */
+@font-face{font-family:'Inter';src:url('/fonts/inter-latin.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
+/* Metric-matched fallback reduces layout shift while Inter loads */
+@font-face{font-family:'Inter Fallback';src:local('Arial');size-adjust:107%;ascent-override:90%;descent-override:22%;line-gap-override:0%}
 
 /* ── RESET ── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',sans-serif;background:#fff;color:#333;line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
+body{font-family:'Inter','Inter Fallback',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;background:#fff;color:#333;line-height:1.7;font-size:16px;-webkit-font-smoothing:antialiased}
 img{max-width:100%;height:auto;display:block}
 a{color:#0073aa;text-decoration:none}
 a:hover{text-decoration:underline}
@@ -85,7 +84,8 @@ input,textarea,select{font-family:inherit}
   opacity:0;visibility:hidden;pointer-events:none;
   transition:opacity 0.2s,visibility 0.2s;
 }
-.nav-item:hover .dropdown-menu{opacity:1;visibility:visible;pointer-events:all}
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu{opacity:1;visibility:visible;pointer-events:all}
 .dropdown-item{
   display:block;padding:10px 16px;
   font-size:0.875rem;color:#333;
@@ -387,9 +387,9 @@ input,textarea,select{font-family:inherit}
   font-size:0.72rem;font-weight:700;text-transform:uppercase;
   letter-spacing:0.06em;color:#0073aa;margin-bottom:8px;display:block;
 }
-.blog-card h2{font-size:1rem;font-weight:700;color:#23282d;margin-bottom:8px;line-height:1.4}
-.blog-card h2 a{color:#23282d}
-.blog-card h2 a:hover{color:#0073aa;text-decoration:none}
+.blog-card h2,.blog-card h3{font-size:1rem;font-weight:700;color:#23282d;margin-bottom:8px;line-height:1.4}
+.blog-card h2 a,.blog-card h3 a{color:#23282d}
+.blog-card h2 a:hover,.blog-card h3 a:hover{color:#0073aa;text-decoration:none}
 .blog-card p{font-size:0.85rem;color:#666;line-height:1.6;margin-bottom:10px}
 .blog-meta{font-size:0.78rem;color:#999}
 .read-more{
